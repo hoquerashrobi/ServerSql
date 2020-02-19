@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    each u in unita
+        div #{u.Unit}
+        img(src=`/images/${u.Unit}.png`)
+        a(href=`dettagli/${u.Unit}`) dettagli
